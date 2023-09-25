@@ -13,7 +13,7 @@ $env:badge=$resources.Split(":")[1].Replace(" ", "")
 $non_fungible_ids=$command_output | Where-Object { $_ -match "change:" -And $_ -match "{" }
 $env:badge_id=$non_fungible_ids.Split(":")[1].Replace(" ", "").Replace("+{{", "{").Replace("}},-{}", "}")
 
-# call x_function
+# call x_function   // this succeeds
 $command_output=resim run manifests\x_function.rtm
 
 # call y_function   // this one fails
