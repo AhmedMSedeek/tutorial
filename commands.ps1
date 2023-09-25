@@ -14,7 +14,7 @@ $non_fungible_ids=$command_output | Where-Object { $_ -match "change:" -And $_ -
 $env:badge_id=$non_fungible_ids.Split(":")[1].Replace(" ", "").Replace("+{{", "{").Replace("}},-{}", "}")
 
 # call x_function   // this succeeds
-$command_output=resim run manifests\x_function.rtm
+resim run manifests\x_function.rtm
 
 # call y_function   // this one fails
-$command_output=resim run manifests\y_function.rtm
+resim run manifests\y_function.rtm
