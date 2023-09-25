@@ -1,0 +1,206 @@
+cargo:rerun-if-env-changed=WABT_CXXSTDLIB
+cargo:rerun-if-env-changed=CXXSTDLIB
+CMAKE_TOOLCHAIN_FILE_x86_64-pc-windows-msvc = None
+CMAKE_TOOLCHAIN_FILE_x86_64_pc_windows_msvc = None
+HOST_CMAKE_TOOLCHAIN_FILE = None
+CMAKE_TOOLCHAIN_FILE = None
+CMAKE_GENERATOR_x86_64-pc-windows-msvc = None
+CMAKE_GENERATOR_x86_64_pc_windows_msvc = None
+HOST_CMAKE_GENERATOR = None
+CMAKE_GENERATOR = None
+CMAKE_PREFIX_PATH_x86_64-pc-windows-msvc = None
+CMAKE_PREFIX_PATH_x86_64_pc_windows_msvc = None
+HOST_CMAKE_PREFIX_PATH = None
+CMAKE_PREFIX_PATH = None
+CMAKE_x86_64-pc-windows-msvc = None
+CMAKE_x86_64_pc_windows_msvc = None
+HOST_CMAKE = None
+CMAKE = None
+running: "cmake" "C:\\Users\\Ahmed\\.cargo\\registry\\src\\index.crates.io-6f17d22bba15001f\\wabt-sys-0.8.0\\wabt" "-G" "Visual Studio 17 2022" "-Thost=x64" "-Ax64" "-DBUILD_TESTS=OFF" "-DBUILD_TOOLS=OFF" "-DCMAKE_INSTALL_PREFIX=C:\\Users\\Ahmed\\tutorial\\target\\debug\\build\\wabt-sys-1502d03d2691ab8c\\out" "-DCMAKE_C_FLAGS= -nologo -MD -Brepro" "-DCMAKE_C_FLAGS_DEBUG= -nologo -MD -Brepro" "-DCMAKE_CXX_FLAGS= -nologo -MD -Brepro" "-DCMAKE_CXX_FLAGS_DEBUG= -nologo -MD -Brepro" "-DCMAKE_ASM_FLAGS= -nologo -MD -Brepro" "-DCMAKE_ASM_FLAGS_DEBUG= -nologo -MD -Brepro" "-DCMAKE_BUILD_TYPE=Debug"
+-- Selecting Windows SDK version 10.0.22000.0 to target Windows 10.0.19045.
+-- Configuring done (1.0s)
+-- Generating done (0.3s)
+-- Build files have been written to: C:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build
+running: "cmake" "--build" "." "--config" "Debug" "--parallel" "2"
+MSBuild version 17.6.3+07e294721 for .NET Framework
+
+  1>Checking Build System
+  Building Custom Rule C:/Users/Ahmed/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wabt-sys-0.8.0/wabt/CMakeLists.txt
+  apply-names.cc
+  binary.cc
+  binary-reader.cc
+  binary-reader-ir.cc
+  binary-reader-logging.cc
+  binary-writer.cc
+  binary-writer-spec.cc
+  binding-hash.cc
+  color.cc
+  common.cc
+  config.cc
+  decompiler.cc
+  error-formatter.cc
+  expr-visitor.cc
+  feature.cc
+  filenames.cc
+  generate-names.cc
+  hash-util.cc
+  ir.cc
+  ir-util.cc
+  Generating Code...
+  Compiling...
+  leb128.cc
+  lexer-source.cc
+  lexer-source-line-finder.cc
+  literal.cc
+  opcode.cc
+  option-parser.cc
+  resolve-names.cc
+  shared-validator.cc
+  stream.cc
+  string-view.cc
+  token.cc
+  tracing.cc
+  type-checker.cc
+  utf8.cc
+  validator.cc
+  wast-lexer.cc
+  wast-parser.cc
+  wat-writer.cc
+  binary-reader-interp.cc
+  interp.cc
+  Generating Code...
+  Compiling...
+  interp-util.cc
+  istream.cc
+  Generating Code...
+  opcode-code-table.c
+  wabt.vcxproj -> C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\Debug\wabt.lib
+  Building Custom Rule C:/Users/Ahmed/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wabt-sys-0.8.0/wabt/CMakeLists.txt
+  apply-names.cc
+  binary.cc
+  binary-reader.cc
+  binary-reader-ir.cc
+  binary-reader-logging.cc
+  binary-writer.cc
+  binary-writer-spec.cc
+  binding-hash.cc
+  color.cc
+  common.cc
+  config.cc
+  decompiler.cc
+  error-formatter.cc
+  expr-visitor.cc
+  feature.cc
+  filenames.cc
+  generate-names.cc
+  hash-util.cc
+  ir.cc
+  ir-util.cc
+  Generating Code...
+  Compiling...
+  leb128.cc
+  lexer-source.cc
+  lexer-source-line-finder.cc
+  literal.cc
+  opcode.cc
+  option-parser.cc
+  resolve-names.cc
+  shared-validator.cc
+  stream.cc
+  string-view.cc
+  token.cc
+  tracing.cc
+  type-checker.cc
+  utf8.cc
+  validator.cc
+  wast-lexer.cc
+  wast-parser.cc
+  wat-writer.cc
+  binary-reader-interp.cc
+  interp.cc
+  Generating Code...
+  Compiling...
+  interp-util.cc
+  istream.cc
+  interp-wasm-c-api.cc
+  Generating Code...
+  opcode-code-table.c
+     Creating library C:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build/Debug/wasm.lib and object C:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build/Debug/wasm.exp
+  wasm.vcxproj -> C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\Debug\wasm.dll
+  Building Custom Rule C:/Users/Ahmed/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wabt-sys-0.8.0/wabt/CMakeLists.txt
+cargo:root=C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out
+cargo:rustc-link-search=native=C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build
+cargo:rustc-link-search=native=C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\Debug
+cargo:rustc-link-lib=static=wabt
+cargo:rerun-if-changed=wabt_shim.cc
+cargo:rerun-if-changed=wabt/src/emscripten-helpers.cc
+TARGET = Some("x86_64-pc-windows-msvc")
+OPT_LEVEL = Some("0")
+HOST = Some("x86_64-pc-windows-msvc")
+cargo:rerun-if-env-changed=CXX_x86_64-pc-windows-msvc
+CXX_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=CXX_x86_64_pc_windows_msvc
+CXX_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=HOST_CXX
+HOST_CXX = None
+cargo:rerun-if-env-changed=CXX
+CXX = None
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2")
+DEBUG = Some("true")
+cargo:rerun-if-env-changed=CXXFLAGS_x86_64-pc-windows-msvc
+CXXFLAGS_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=CXXFLAGS_x86_64_pc_windows_msvc
+CXXFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=HOST_CXXFLAGS
+HOST_CXXFLAGS = None
+cargo:rerun-if-env-changed=CXXFLAGS
+CXXFLAGS = None
+running: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "wabt" "-I" "C:\\Users\\Ahmed\\tutorial\\target\\debug\\build\\wabt-sys-1502d03d2691ab8c\\out\\build" "-std=c++11" "-FoC:\\Users\\Ahmed\\tutorial\\target\\debug\\build\\wabt-sys-1502d03d2691ab8c\\out\\wabt/src/emscripten-helpers.o" "-c" "wabt/src/emscripten-helpers.cc"
+cargo:warning=cl : Command line warning D9002 : ignoring unknown option '-std=c++11'
+
+emscripten-helpers.cc
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\ostream(544): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\ostream(536): note: while compiling class template member function 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::write(const _Elem *,std::streamsize)'
+        with
+        [
+            _Elem=char
+        ]
+C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src/string-view.h(329): note: see the first reference to 'std::basic_ostream<char,std::char_traits<char>>::write' in 'wabt::operator <<'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\ostream(671): note: see reference to class template instantiation 'std::basic_ostream<char,std::char_traits<char>>' being compiled
+exit code: 0
+running: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Z7" "-Brepro" "-I" "wabt" "-I" "C:\\Users\\Ahmed\\tutorial\\target\\debug\\build\\wabt-sys-1502d03d2691ab8c\\out\\build" "-std=c++11" "-FoC:\\Users\\Ahmed\\tutorial\\target\\debug\\build\\wabt-sys-1502d03d2691ab8c\\out\\wabt_shim.o" "-c" "wabt_shim.cc"
+cargo:warning=cl : Command line warning D9002 : ignoring unknown option '-std=c++11'
+
+wabt_shim.cc
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\ostream(544): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\ostream(536): note: while compiling class template member function 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::write(const _Elem *,std::streamsize)'
+        with
+        [
+            _Elem=char
+        ]
+C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src/string-view.h(329): note: see the first reference to 'std::basic_ostream<char,std::char_traits<char>>::write' in 'wabt::operator <<'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\ostream(671): note: see reference to class template instantiation 'std::basic_ostream<char,std::char_traits<char>>' being compiled
+exit code: 0
+cargo:rerun-if-env-changed=AR_x86_64-pc-windows-msvc
+AR_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=AR_x86_64_pc_windows_msvc
+AR_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=HOST_AR
+HOST_AR = None
+cargo:rerun-if-env-changed=AR
+AR = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64-pc-windows-msvc
+ARFLAGS_x86_64-pc-windows-msvc = None
+cargo:rerun-if-env-changed=ARFLAGS_x86_64_pc_windows_msvc
+ARFLAGS_x86_64_pc_windows_msvc = None
+cargo:rerun-if-env-changed=HOST_ARFLAGS
+HOST_ARFLAGS = None
+cargo:rerun-if-env-changed=ARFLAGS
+ARFLAGS = None
+running: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\lib.exe" "-out:C:\\Users\\Ahmed\\tutorial\\target\\debug\\build\\wabt-sys-1502d03d2691ab8c\\out\\libwabt_shim.a" "-nologo" "C:\\Users\\Ahmed\\tutorial\\target\\debug\\build\\wabt-sys-1502d03d2691ab8c\\out\\wabt/src/emscripten-helpers.o" "C:\\Users\\Ahmed\\tutorial\\target\\debug\\build\\wabt-sys-1502d03d2691ab8c\\out\\wabt_shim.o"
+exit code: 0
+cargo:rustc-link-search=native=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\atlmfc\lib\x64
+cargo:rustc-link-lib=static=wabt_shim
+cargo:rustc-link-search=native=C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out

@@ -1,0 +1,11 @@
+CALL_METHOD Address("${account}") "lock_fee" Decimal("10");
+
+CALL_METHOD Address("${account}") "create_proof_of_non_fungibles" Address("${badge}") Array<NonFungibleLocalId>(NonFungibleLocalId("${badge_id}"));
+POP_FROM_AUTH_ZONE Proof("badge_proof");
+
+CALL_METHOD
+    Address("${component}")
+    "x_function"
+        Proof("badge_proof");
+        
+CALL_METHOD Address("${account}") "deposit_batch" Expression("ENTIRE_WORKTOP");

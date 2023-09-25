@@ -1,0 +1,5 @@
+C:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build/CMakeFiles/everything.dir
+C:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build/CMakeFiles/wabt.dir
+C:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build/CMakeFiles/wasm.dir
+C:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build/CMakeFiles/ZERO_CHECK.dir

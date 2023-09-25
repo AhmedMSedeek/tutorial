@@ -1,0 +1,11 @@
+CALL_METHOD Address("${account}") "lock_fee" Decimal("10");
+
+CALL_METHOD Address("${account}") "withdraw" Address("${badge}") Decimal("1");
+TAKE_FROM_WORKTOP Address("${badge}") Decimal("1") Bucket("badge_bucket");
+
+CALL_METHOD
+    Address("${component}")
+    "y_function"
+        Bucket("badge_bucket");
+
+CALL_METHOD Address("${account}") "deposit_batch" Expression("ENTIRE_WORKTOP");

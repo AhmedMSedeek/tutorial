@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{44ABDC1C-577E-3112-BC7D-1C45E07854CD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>wasm</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">wasm.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">wasm</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">wasm.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">wasm</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">wasm.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">wasm</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">wasm.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">wasm</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build;C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\third_party\wasm-c-api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Brepro -Brepro</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4018;4056;4756;4267;4244;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WASM_API_EXTERN=__declspec(dllexport);_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_HAS_EXCEPTIONS=0;CMAKE_INTDIR="Debug";wasm_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;WASM_API_EXTERN=__declspec(dllexport);_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_HAS_EXCEPTIONS=0;CMAKE_INTDIR=\"Debug\";wasm_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build;C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\third_party\wasm-c-api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build;C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\third_party\wasm-c-api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Debug\wabt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build/Debug/wasm.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build/Debug/wasm.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build;C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\third_party\wasm-c-api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Brepro</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4018;4056;4756;4267;4244;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;WASM_API_EXTERN=__declspec(dllexport);_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_HAS_EXCEPTIONS=0;CMAKE_INTDIR="Release";wasm_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;WASM_API_EXTERN=__declspec(dllexport);_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_HAS_EXCEPTIONS=0;CMAKE_INTDIR=\"Release\";wasm_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build;C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\third_party\wasm-c-api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build;C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\third_party\wasm-c-api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Release\wabt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build/Release/wasm.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build/Release/wasm.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build;C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\third_party\wasm-c-api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Brepro</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4018;4056;4756;4267;4244;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;WASM_API_EXTERN=__declspec(dllexport);_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_HAS_EXCEPTIONS=0;CMAKE_INTDIR="MinSizeRel";wasm_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;WASM_API_EXTERN=__declspec(dllexport);_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_HAS_EXCEPTIONS=0;CMAKE_INTDIR=\"MinSizeRel\";wasm_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build;C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\third_party\wasm-c-api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build;C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\third_party\wasm-c-api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>MinSizeRel\wabt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build/MinSizeRel/wasm.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build/MinSizeRel/wasm.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build;C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\third_party\wasm-c-api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Brepro</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4056;4756;4267;4244;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;WASM_API_EXTERN=__declspec(dllexport);_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_HAS_EXCEPTIONS=0;CMAKE_INTDIR="RelWithDebInfo";wasm_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;WASM_API_EXTERN=__declspec(dllexport);_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_HAS_EXCEPTIONS=0;CMAKE_INTDIR=\"RelWithDebInfo\";wasm_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build;C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\third_party\wasm-c-api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build;C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\third_party\wasm-c-api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>RelWithDebInfo\wabt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build/RelWithDebInfo/wasm.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build/RelWithDebInfo/wasm.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Ahmed/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wabt-sys-0.8.0/wabt/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Ahmed/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wabt-sys-0.8.0/wabt -BC:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build --check-stamp-file C:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\config.h.in;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\CMakeFiles\3.27.6\CMakeCCompiler.cmake;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\CMakeFiles\3.27.6\CMakeCXXCompiler.cmake;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\CMakeFiles\3.27.6\CMakeRCCompiler.cmake;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\CMakeFiles\3.27.6\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Ahmed/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wabt-sys-0.8.0/wabt/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Ahmed/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wabt-sys-0.8.0/wabt -BC:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build --check-stamp-file C:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\config.h.in;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\CMakeFiles\3.27.6\CMakeCCompiler.cmake;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\CMakeFiles\3.27.6\CMakeCXXCompiler.cmake;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\CMakeFiles\3.27.6\CMakeRCCompiler.cmake;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\CMakeFiles\3.27.6\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Ahmed/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wabt-sys-0.8.0/wabt/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Ahmed/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wabt-sys-0.8.0/wabt -BC:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build --check-stamp-file C:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\config.h.in;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\CMakeFiles\3.27.6\CMakeCCompiler.cmake;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\CMakeFiles\3.27.6\CMakeCXXCompiler.cmake;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\CMakeFiles\3.27.6\CMakeRCCompiler.cmake;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\CMakeFiles\3.27.6\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Ahmed/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wabt-sys-0.8.0/wabt/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Ahmed/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wabt-sys-0.8.0/wabt -BC:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build --check-stamp-file C:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Platform\WindowsPaths.cmake;C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\config.h.in;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\CMakeFiles\3.27.6\CMakeCCompiler.cmake;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\CMakeFiles\3.27.6\CMakeCXXCompiler.cmake;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\CMakeFiles\3.27.6\CMakeRCCompiler.cmake;C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\CMakeFiles\3.27.6\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\apply-names.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\apply-names.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\binary.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\binary.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\binary-reader.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\binary-reader.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\binary-reader-ir.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\binary-reader-ir.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\binary-reader-logging.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\binary-reader-logging.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\binary-writer.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\binary-writer.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\binary-writer-spec.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\binary-writer-spec.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\binding-hash.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\binding-hash.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\color.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\color.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\common.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\common.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\config.h.in" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\config.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\decompiler.h" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\decompiler-ast.h" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\decompiler-ls.h" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\decompiler-naming.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\decompiler.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\error-formatter.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\error-formatter.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\expr-visitor.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\expr-visitor.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\feature.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\feature.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\filenames.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\filenames.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\generate-names.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\generate-names.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\hash-util.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\hash-util.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\ir.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\ir.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\ir-util.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\ir-util.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\leb128.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\leb128.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\lexer-source.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\lexer-source.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\lexer-source-line-finder.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\lexer-source-line-finder.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\literal.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\literal.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\opcode.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\opcode.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\opcode-code-table.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\opcode-code-table.c" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\option-parser.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\option-parser.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\resolve-names.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\resolve-names.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\shared-validator.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\shared-validator.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\stream.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\stream.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\string-view.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\string-view.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\token.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\token.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\tracing.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\tracing.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\type.h" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\type-checker.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\type-checker.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\utf8.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\utf8.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\validator.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\validator.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\wast-lexer.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\wast-lexer.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\wast-parser.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\wast-parser.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\wat-writer.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\wat-writer.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\interp\binary-reader-interp.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\interp\binary-reader-interp.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\interp\interp.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\interp\interp.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\interp\interp-inl.h" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\interp\interp-math.h" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\interp\interp-util.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\interp\interp-util.cc" />
+    <ClInclude Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\interp\istream.h" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\interp\istream.cc" />
+    <ClCompile Include="C:\Users\Ahmed\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wabt-sys-0.8.0\wabt\src\interp\interp-wasm-c-api.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\ZERO_CHECK.vcxproj">
+      <Project>{A873BF19-312A-3552-8E5D-E9C213D11C6B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Ahmed\tutorial\target\debug\build\wabt-sys-1502d03d2691ab8c\out\build\wabt.vcxproj">
+      <Project>{E415A297-1F08-35B4-8599-F5D84D7B1618}</Project>
+      <Name>wabt</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

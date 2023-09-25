@@ -1,0 +1,10 @@
+^C:\USERS\AHMED\.CARGO\REGISTRY\SRC\INDEX.CRATES.IO-6F17D22BBA15001F\WABT-SYS-0.8.0\WABT\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Ahmed/.cargo/registry/src/index.crates.io-6f17d22bba15001f/wabt-sys-0.8.0/wabt -BC:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build --check-stamp-file C:/Users/Ahmed/tutorial/target/debug/build/wabt-sys-1502d03d2691ab8c/out/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
